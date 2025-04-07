@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAiD Search</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top navigation bar with logo -->
+    <header class="topbar">
+      <div class="logo-container">
+        <img src="./images/raid-logo.png" alt="RAiD Search Logo" class="logo" />
+        <h1 class="site-title">Search</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="column search-column">
+        <div class="search-panel">
+          <h2>Search Options</h2>
+          <!-- Wrap in a form element with an ID -->
+          <form id="search-form">
+            <div class="search-field">
+              <label for="title-search">Title:</label>
+              <input
+                type="text"
+                id="title-search"
+                placeholder="Search by title..."
+              />
+              <button
+                type="button"
+                class="example-button"
+                data-field="title-search"
+              >
+                study
+              </button>
+            </div>
+            <div class="search-field">
+              <label for="description-search">Description:</label>
+              <input
+                type="text"
+                id="description-search"
+                placeholder="Search by description..."
+              />
+              <button
+                type="button"
+                class="example-button"
+                data-field="description-search"
+              >
+                research
+              </button>
+            </div>
+            <div class="search-field">
+              <label for="creator-search">Creator (ORCID):</label>
+              <input
+                type="text"
+                id="creator-search"
+                placeholder="Search by creator..."
+              />
+              <button
+                type="button"
+                class="example-button"
+                data-field="creator-search"
+              >
+                https://orcid.org/0000-0003-0760-1944
+              </button>
+            </div>
+            <div class="search-field">
+              <label for="related-search">Related Identifiers (DOI):</label>
+              <input
+                type="text"
+                id="related-search"
+                placeholder="Search by related identifier..."
+              />
+              <button
+                type="button"
+                class="example-button"
+                data-field="related-search"
+              >
+                https://doi.org/10.5555.25/raid.2023.00000001
+              </button>
+            </div>
+            <div class="search-field">
+              <label for="organisation-search">Organisation (ROR):</label>
+              <input
+                type="text"
+                id="organisation-search"
+                placeholder="Search by organisation..."
+              />
+              <button
+                type="button"
+                class="example-button"
+                data-field="organisation-search"
+              >
+                https://ror.org/02stey378
+              </button>
+            </div>
+            <div class="operator-selection">
+              <p>Combine search criteria with:</p>
+              <label>
+                <input type="radio" name="operator" value="AND" checked /> AND
+              </label>
+              <label>
+                <input type="radio" name="operator" value="OR" /> OR
+              </label>
+            </div>
+            <!-- Change to submit button -->
+            <button type="submit" id="search-button" class="search-button">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="column results-column">
+        <div id="results-container">
+          <p class="initial-message">
+            Enter search criteria and click Search to find results.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>

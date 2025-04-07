@@ -1,0 +1,179 @@
+* {
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+  gap: 20px;
+}
+
+.column {
+  padding: 15px;
+}
+
+.search-column {
+  flex: 0 0 350px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.results-column {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.search-panel {
+  padding: 10px;
+}
+
+.search-panel h2 {
+  margin-top: 0;
+  color: #008ccf;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-field {
+  margin-bottom: 15px;
+}
+
+.search-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.search-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.example-button {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 3px 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.operator-selection {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.operator-selection p {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.search-button {
+  width: 100%;
+  background-color: #008ccf;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Results container styling */
+#results-container {
+  padding: 10px;
+}
+
+.initial-message {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.search-result {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.search-result h3 {
+  margin-top: 0;
+  color: #008ccf;
+}
+
+.search-result mark {
+  background-color: yellow;
+  padding: 2px 0;
+}
+
+#download-results {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .search-column {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.topbar {
+  background-color: #008ccf;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
