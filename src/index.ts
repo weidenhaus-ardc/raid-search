@@ -348,8 +348,6 @@ const renderResults = (
     return;
   }
 
-  console.log("+++ data.data", data.data);
-
   const downloadButton = document.createElement("button");
   container.innerHTML = "";
   downloadButton.innerText = "Download Results";
